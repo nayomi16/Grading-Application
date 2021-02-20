@@ -1,0 +1,26 @@
+{
+  "name": "gradingapplication",
+  "version": "1.0.0",
+  "description": "Grading Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayomi16/Grading-Application.git"
+  },
+  "keywords": [
+    "npm",
+    "node"
+  ],
+  "author": "Nayomi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nayomi16/Grading-Application/issues"
+  },
+  "homepage": "https://github.com/nayomi16/Grading-Application#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
