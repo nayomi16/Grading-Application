@@ -1,0 +1,28 @@
+[
+    {
+        "assID": "Assignment_1",
+        "teachID": "T001",
+        "noOfQuest": "3"    
+    },
+    {
+        "assID": "Assignment_2",
+        "teachID": "T001",
+        "noOfQuest": "2"    
+    },
+    {
+        "assID": "Assignment_1",
+        "teachID": "T002",
+        "noOfQuest": "3"    
+    },
+    {
+        "assID": "Assignment_2",
+        "teachID": "T002",
+        "noOfQuest": "2"    
+    },
+    {
+        "assID": "Assignment_3",
+        "teachID": "T002",
+        "noOfQuest": "2"    
+    }
+
+]
