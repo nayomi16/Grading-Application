@@ -2,56 +2,67 @@
     {
         "SId": "S001",
         "name": "Nayomi Rashmika",
+        "teacherId":"T001",
         "class": "A" 
     },
     {
         "SId": "S002",
         "name": "Aloka Sandamali",
+        "teacherId":"T001",
         "class": "A" 
     },
     {
         "SId": "S003",
         "name": "Lakruwan Priyankara",
+        "teacherId":"T002",
         "class": "B" 
     },
     {
         "SId": "S004",
         "name": "Pavini Paboda",
+        "teacherId":"T002",
         "class": "B" 
     },
     {
         "SId": "S005",
         "name": "Malith Madushan",
+        "teacherId":"T003",
         "class": "C" 
     },
     {
         "SId": "S006",
         "name": "Kelum Sampath",
+        "teacherId":"T003",
         "class": "C" 
     },
     {
         "SId": "S007",
         "name": "Hirunika",
+        "teacherId":"T004",
         "class": "D" 
     },
     {
         "SId": "S008",
         "name": "Yashmika",
+        "teacherId":"T004",
         "class": "D" 
     },
     {
         "SId": "S009",
         "name": "Bathiya",
+        "teacherId":"T005",
         "class": "E" 
     },
     {
         "SId": "S0010",
         "name": "Santhush",
+        "teacherId":"T005",
         "class": "E" 
     },
     {
         "SId": "S0011",
         "name": "Shiromi",
+        "teacherId":"T005",
         "class": "E" 
     }
 ]
