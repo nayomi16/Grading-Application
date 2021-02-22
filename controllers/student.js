@@ -59,9 +59,53 @@ module.exports.getDetailResults=(req,res)=>{
          res.status(200).json({message:qResults}); 
       
     }
-    
-
-
 }
 
+module.exports.reviewAnswer=(req,res)=>{
+    const reviewResults=[];
+    let que;
+    console.log("ok")
+    let teacherId;
 
+    student.forEach(st => {
+        if(st.SId==req.params.sId) teacherId=st.teacherId;
+    });
+
+    if(studentResults.length == 0){
+        res.status(403).json({message :"No questions available"});  
+    }else{
+        let i=0;
+        studentResults.forEach(result => {
+            
+            if(result.assId==req.params.assId && result.SId==req.params.sId){
+                // questions.forEach(question => {
+                //     if()
+                    
+                // });
+                // console.log(questions[i].assId,"---",result.assId,"---",teacherId);
+                
+                questions.forEach(q => {
+                    if(q.qId==result.qId && q.assId==result.assId && q.teachId==teacherId){
+                        que=q.question
+                        console.log(q.question);
+                    } 
+                });
+                
+                
+               var reviewResult={
+                   "qId":result.qId,
+                   "question":que,
+                   "studentAnswer":result.stuAnswer,
+                   "resultStatus":result.resultStatus,
+                   "timeSpent":result.timeSpent,
+                   "noOfAttempts":result.noOfAttempt
+               }
+               reviewResults.push(reviewResult);
+                 }
+                 i=i+1;
+        
+         });
+         res.status(200).json({message:reviewResults}); 
+      
+    }
+}
