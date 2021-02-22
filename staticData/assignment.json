@@ -14,17 +14,7 @@
         "teachID": "T001",
         "noOfQuest": "3"    
     },
-    {
-        "assID": "Assignment_4",
-        "teachID": "T001",
-        "noOfQuest": "2"    
-    },
-    {
-        "assID": "Assignment_5",
-        "teachID": "T001",
-        "noOfQuest": "2"    
-    },
-    {
+   {
         "assID": "Assignment_1",
         "teachID": "T002",
         "noOfQuest": "3"    
@@ -35,9 +25,35 @@
         "noOfQuest": "2"    
     },
     {
-        "assID": "Assignment_3",
-        "teachID": "T002",
+        "assID": "Assignment_1",
+        "teachID": "T003",
+        "noOfQuest": "2"    
+    },
+    {
+        "assID": "Assignment_2",
+        "teachID": "T003",
+        "noOfQuest": "2"    
+    },
+    {
+        "assID": "Assignment_1",
+        "teachID": "T004",
+        "noOfQuest": "2"    
+    },
+    {
+        "assID": "Assignment_2",
+        "teachID": "T004",
+        "noOfQuest": "2"    
+    },
+    {
+        "assID": "Assignment_1",
+        "teachID": "T005",
+        "noOfQuest": "2"    
+    },
+    {
+        "assID": "Assignment_2",
+        "teachID": "T005",
         "noOfQuest": "2"    
     }
+   
 
 ]

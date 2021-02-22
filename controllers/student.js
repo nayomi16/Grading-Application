@@ -91,8 +91,7 @@ module.exports.reviewAnswer=(req,res)=>{
                     } 
                 });
                 
-                
-               var reviewResult={
+                 var reviewResult={
                    "qId":result.qId,
                    "question":que,
                    "studentAnswer":result.stuAnswer,
@@ -102,8 +101,6 @@ module.exports.reviewAnswer=(req,res)=>{
                }
                reviewResults.push(reviewResult);
                  }
-                 i=i+1;
-        
          });
          res.status(200).json({message:reviewResults}); 
       

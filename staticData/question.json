@@ -47,5 +47,117 @@
         "teachId": "T001",
         "question": "what is the summation of -8 and -2 ?",
         "correctAnswer": -10
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_1",
+        "teachId": "T002",
+        "question": "what is the summation of 2 and 5.6 ?",
+        "correctAnswer": 7.6
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_1",
+        "teachId": "T002",
+        "question": "what is the summation of 0.3 and 5.6 ?",
+        "correctAnswer": 5.9
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_2",
+        "teachId": "T002",
+        "question": "what is the summation of 3 and -5.6 ?",
+        "correctAnswer": -2.6
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_2",
+        "teachId": "T002",
+        "question": "what is the multification of 0 and -5.6 ?",
+        "correctAnswer": 0
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_1",
+        "teachId": "T003",
+        "question": "what is the multification of -1 and -1 ?",
+        "correctAnswer": 1
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_1",
+        "teachId": "T003",
+        "question": "what is the multification of -5 and -5 ?",
+        "correctAnswer": 25
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_2",
+        "teachId": "T003",
+        "question": "what is the multification of 2 and 5.6 ?",
+        "correctAnswer": 11.2
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_2",
+        "teachId": "T003",
+        "question": "what is the multification of 2 and -5 ?",
+        "correctAnswer": -10
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_1",
+        "teachId": "T004",
+        "question": "what is the subsititution of -1 and -5.6 ?(-1-(-5.6))",
+        "correctAnswer": 4.6
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_1",
+        "teachId": "T004",
+        "question": "what is the subsititution of -2 and -5.6 ?(-2-(-5.6))",
+        "correctAnswer": 3.6
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_2",
+        "teachId": "T004",
+        "question": "what is the subsititution of 0 and -5.6 ?(0-(-5.6))",
+        "correctAnswer": 5.6
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_2",
+        "teachId": "T004",
+        "question": "what is the summation of 0 and -2 ?",
+        "correctAnswer": -2
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_1",
+        "teachId": "T005",
+        "question": "what is the summation of -7 and 5.6 ?",
+        "correctAnswer": -6.4
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_1",
+        "teachId": "T005",
+        "question": "what is the summation of 1.21 and 5.6 ?",
+        "correctAnswer": 6.81
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_2",
+        "teachId": "T005",
+        "question": "what is the summation of 0.214 and -5.6 ?",
+        "correctAnswer": -5.386
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_2",
+        "teachId": "T005",
+        "question": "what is the multification of 0.2 and -5.6 ?",
+        "correctAnswer": -1.12
      }
 ]
