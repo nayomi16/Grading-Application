@@ -74,8 +74,7 @@ module.exports.getAssignments=(req,res)=>{
     
     );
     res.status(200).json({message :assignmentArry}); 
-
-        }
+    }
 
 }
 

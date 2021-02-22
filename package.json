@@ -22,6 +22,7 @@
   "homepage": "https://github.com/nayomi16/Grading-Application#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "collections": "^5.1.12",
     "express": "^4.17.1",
     "nodemon": "^2.0.7"
   },
