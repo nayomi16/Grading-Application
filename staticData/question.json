@@ -1,0 +1,51 @@
+[
+    {
+        "qId": "Q1",
+        "assId": "Assignment_1",
+        "teachId": "T001",
+        "question": "what is the summation of 5 and 5.6 ?",
+        "correctAnswer": 10.6
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_1",
+        "teachId": "T001",
+        "question": "what is the summation of 0.21 and 5.6 ?",
+        "correctAnswer": 5.81
+     },
+     {
+        "qId": "Q3",
+        "assId": "Assignment_1",
+        "teachId": "T001",
+        "question": "what is the summation of 8.1 and -5.6 ?",
+        "correctAnswer": 2.5
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_2",
+        "teachId": "T001",
+        "question": "what is the multification of 2 and -5.6 ?",
+        "correctAnswer": -11.2
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_2",
+        "teachId": "T001",
+        "question": "what is the multification of -2 and -5 ?",
+        "correctAnswer": 10
+     },
+     {
+        "qId": "Q1",
+        "assId": "Assignment_3",
+        "teachId": "T001",
+        "question": "what is the subsititution of -8 and -5.6 ?(-8-(-5.6))",
+        "correctAnswer": 2.5
+     },
+     {
+        "qId": "Q2",
+        "assId": "Assignment_3",
+        "teachId": "T001",
+        "question": "what is the summation of -8 and -2 ?",
+        "correctAnswer": -10
+     }
+]

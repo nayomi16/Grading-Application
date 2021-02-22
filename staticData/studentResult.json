@@ -1,0 +1,127 @@
+[
+    {
+        "SId": "S001",
+        "assId": "Assignment_1",
+        "qId": "Q1" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":10.6
+    },
+    {
+        "SId": "S001",
+        "assId": "Assignment_1",
+        "qId": "Q2" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"1",
+        "timeSpent":1,
+        "stuAnswer":5.81
+    },
+    {
+        "SId": "S001",
+        "assId": "Assignment_1",
+        "qId": "Q3" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":2.5
+    },
+    {
+        "SId": "S001",
+        "assId": "Assignment_2",
+        "qId": "Q1" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"3",
+        "timeSpent":2,
+        "stuAnswer":-11.2
+    },
+    {
+        "SId": "S001",
+        "assId": "Assignment_2",
+        "qId": "Q2" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":10
+    },
+    {
+        "SId": "S001",
+        "assId": "Assignment_3",
+        "qId": "Q1" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"1",
+        "timeSpent":2,
+        "stuAnswer":2.5
+    },{
+        "SId": "S001",
+        "assId": "Assignment_3",
+        "qId": "Q2" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":-10
+    },
+    {
+        "SId": "S002",
+        "assId": "Assignment_1",
+        "qId": "Q1" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":10.6
+    },
+    {
+        "SId": "S002",
+        "assId": "Assignment_1",
+        "qId": "Q2" ,
+        "resultStatus":"wrong" ,
+        "noOfAttempt":"3",
+        "timeSpent":1,
+        "stuAnswer":4.81
+    },
+    {
+        "SId": "S002",
+        "assId": "Assignment_1",
+        "qId": "Q3" ,
+        "resultStatus":"wrong" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":6.5
+    },
+    {
+        "SId": "S002",
+        "assId": "Assignment_2",
+        "qId": "Q1" ,
+        "resultStatus":"partial" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":-11
+    },
+    {
+        "SId": "S002",
+        "assId": "Assignment_2",
+        "qId": "Q2" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":10
+    },
+    {
+        "SId": "S002",
+        "assId": "Assignment_3",
+        "qId": "Q1" ,
+        "resultStatus":"right" ,
+        "noOfAttempt":"1",
+        "timeSpent":2,
+        "stuAnswer":2.5
+    },{
+        "SId": "S002",
+        "assId": "Assignment_3",
+        "qId": "Q2" ,
+        "resultStatus":"wrong" ,
+        "noOfAttempt":"2",
+        "timeSpent":2,
+        "stuAnswer":-9
+    }
+
+]

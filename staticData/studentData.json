@@ -1,0 +1,57 @@
+[
+    {
+        "SId": "S001",
+        "name": "Nayomi Rashmika",
+        "class": "A" 
+    },
+    {
+        "SId": "S002",
+        "name": "Aloka Sandamali",
+        "class": "A" 
+    },
+    {
+        "SId": "S003",
+        "name": "Lakruwan Priyankara",
+        "class": "B" 
+    },
+    {
+        "SId": "S004",
+        "name": "Pavini Paboda",
+        "class": "B" 
+    },
+    {
+        "SId": "S005",
+        "name": "Malith Madushan",
+        "class": "C" 
+    },
+    {
+        "SId": "S006",
+        "name": "Kelum Sampath",
+        "class": "C" 
+    },
+    {
+        "SId": "S007",
+        "name": "Hirunika",
+        "class": "D" 
+    },
+    {
+        "SId": "S008",
+        "name": "Yashmika",
+        "class": "D" 
+    },
+    {
+        "SId": "S009",
+        "name": "Bathiya",
+        "class": "E" 
+    },
+    {
+        "SId": "S0010",
+        "name": "Santhush",
+        "class": "E" 
+    },
+    {
+        "SId": "S0011",
+        "name": "Shiromi",
+        "class": "E" 
+    }
+]

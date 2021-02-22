@@ -1,0 +1,22 @@
+[
+    {
+        "name": "A",
+        "teacherId": "T001"  
+    },
+    {
+        "name": "B",
+        "teacherId": "T002"
+    },
+    {
+        "name": "C",
+        "teacherId": "T003" 
+    },
+    {
+        "name": "D",
+        "teacherId": "T004" 
+    },
+    {
+        "name": "E",
+        "teacherId": "T005" 
+    }
+]
