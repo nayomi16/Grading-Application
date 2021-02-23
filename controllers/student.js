@@ -51,7 +51,9 @@ module.exports.getDetailResults=(req,res)=>{
                 
                var qResult={
                    "qId":result.qId,
-                   "resultStatus":result.resultStatus
+                   "resultStatus":result.resultStatus,
+                   "timeSpent":result.timeSpent,
+                   "noOfAttempt":result.noOfAttempt
                }
                qResults.push(qResult);
 
