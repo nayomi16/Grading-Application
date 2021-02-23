@@ -80,6 +80,33 @@ module.exports.getOverallGrade=(req,res)=>{
     res.status(200).json({message:sMarks}); 
 }
 
+module.exports.getStatisticsOnQuestion=(req,res)=>{
+    let totaltimeSpent=0;
+    let noOfStudents=0;
+    let averageTimeSpent=0;
+    let corectCount=0;
+    let corectPercentage=0;
+   students.forEach(st => {
+    if(st.teacherId==req.params.tId){
+        studentResults.forEach(result => {
+            if(result.SId==st.SId && result.assId==req.params.assId && result.qId==req.params.qId){
+                if(result.resultStatus=="right") corectCount=corectCount+1;
+                totaltimeSpent=totaltimeSpent+result.timeSpent;
+            }
+        });
+        noOfStudents=noOfStudents+1;
+    }
+   });
+   averageTimeSpent=totaltimeSpent/noOfStudents;
+   corectPercentage=(corectCount/noOfStudents)*100
+   console.log(corectPercentage," ",averageTimeSpent);
+   var statics={
+       "qId":req.params.qId,
+       "averageTimeSpent":averageTimeSpent,
+       "corectPercentage":corectPercentage
+   }
+   res.status(200).json({message:statics}); 
+}
 
 
 
