@@ -41,6 +41,7 @@ module.exports.getStudent=(req,res)=>{
 
 module.exports.getDetailResults=(req,res)=>{
     const qResults=[];
+    let L;
     if(studentResults.length == 0){
         res.status(403).json({message :"No questions available"});  
     }else{
@@ -53,7 +54,9 @@ module.exports.getDetailResults=(req,res)=>{
                    "resultStatus":result.resultStatus
                }
                qResults.push(qResult);
+
                  }
+                 L=req.params.sId;
         
          });
          res.status(200).json({message:qResults}); 
@@ -66,7 +69,7 @@ module.exports.reviewAnswer=(req,res)=>{
     let que;
     console.log("ok")
     let teacherId;
-
+    let L;
     student.forEach(st => {
         if(st.SId==req.params.sId) teacherId=st.teacherId;
     });
@@ -101,8 +104,11 @@ module.exports.reviewAnswer=(req,res)=>{
                }
                reviewResults.push(reviewResult);
                  }
+                
          });
          res.status(200).json({message:reviewResults}); 
+
+         
       
     }
 }
