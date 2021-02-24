@@ -4,6 +4,7 @@ const assignment=require('../staticData/assignment.json')
 const teacherHelper='../helpers/teacherHelper'
 const studentResults=require('../staticData/studentResult.json')
 const students=require('../staticData/studentData.json')
+const questions=require('../staticData/question.json')
 const fs = require('fs')
 
 
@@ -17,35 +18,54 @@ module.exports.getTeacherDetail=(req,res)=>{
 }
 
 module.exports.getTeacher=(req,res)=>{
-    
+    var assignmentArry = [];
+    var question=[];
     if(teacher1.length == 0){
         res.status(403).json({message :"No teachers available"});  
     }else{
         console.log(req.params.id);
         teacher1.forEach(teach => {
-            if(teach.id==req.params.id)  res.status(200).json({message :teach}); 
-        });
+            if(teach.id==req.params.id){
+                assignment.forEach(ass => {
+                    if(ass.teachID==req.params.id){
+                        questions.forEach(ques => {
+                            if(ques.teachId==req.params.id && ques.assId==ass.assID){
+                                question.push(ques.qId)
+                                
+                            }
+                            
+                        });
+                        var teacherAss={
+                            "assId":ass.assID,
+                            "quesIds":question
+                        }
+                        assignmentArry.push(teacherAss)
+                        question=[];
+                        //    assignmentArry.push(ass.assID);
+                           }
+               });
+
+               var data={
+                "teacherObj":teach,
+                "teacherAssDetails":assignmentArry
+                
+            }
+            res.status(200).json({
+                "code":200,
+                "massage":"true",
+                "data":data
+            });
+
+            } 
+             
+           
+        }); 
+        
 
         }
 }
 
-module.exports.getAssignments=(req,res)=>{
-    var assignmentArry = []; 
-    if(assignment.length == 0){
-        res.status(403).json({message :"No assignment available"});  
-        return;
-    }else{
-        assignment.forEach(ass => {
-         if(ass.teachID==req.params.id){
-                assignmentArry.push(ass.assID);
-                }
-    }
-    
-    );
-    res.status(200).json({message :assignmentArry}); 
-    }
 
-}
 
 module.exports.getOverallGrade=(req,res)=>{
     let sId;
