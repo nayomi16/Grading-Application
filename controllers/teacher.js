@@ -39,6 +39,7 @@ module.exports.getTeacher=(req,res)=>{
                             "assId":ass.assID,
                             "quesIds":question
                         }
+                        
                         assignmentArry.push(teacherAss)
                         question=[];
                         //    assignmentArry.push(ass.assID);
@@ -47,7 +48,7 @@ module.exports.getTeacher=(req,res)=>{
 
                var data={
                 "teacherObj":teach,
-                "teacherAssDetails":assignmentArry
+                "teacherAssgnDetails":assignmentArry
                 
             }
             res.status(200).json({
@@ -125,7 +126,11 @@ module.exports.getStatisticsOnQuestion=(req,res)=>{
        "averageTimeSpent":averageTimeSpent,
        "corectPercentage":corectPercentage
    }
-   res.status(200).json({message:statics}); 
+   res.status(200).json({
+       "code":200,
+       "massage":"true",
+       "data":statics
+   }); 
 }
 
 
