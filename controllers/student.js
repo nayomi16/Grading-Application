@@ -20,14 +20,18 @@ module.exports.getStudent=(req,res)=>{
                 });
 
                 attemptAssignments.forEach(v => attemptAssignmentsArray.push(v));
-                var result = { 
+                var data = { 
                     "studentObj": s, 
                     "assignments": attemptAssignmentsArray, 
                     
                   };
 
                 L=req.params.SId;
-                res.status(200).json(result); 
+                res.status(200).json({
+                    "code":200,
+                    "massage":"true",
+                    "data":data
+                }); 
             }
             
         });
@@ -60,7 +64,11 @@ module.exports.getDetailResults=(req,res)=>{
                  L=req.params.sId;
         
          });
-         res.status(200).json({message:qResults}); 
+         res.status(200).json({
+             "code":200,
+             "massage":"true",
+             "data":qResults
+         }); 
       
     }
 }
@@ -71,6 +79,7 @@ module.exports.reviewAnswer=(req,res)=>{
     console.log("ok")
     let teacherId;
     let L;
+    let correctAnswer;
     student.forEach(st => {
         if(st.SId==req.params.sId) teacherId=st.teacherId;
     });
@@ -91,7 +100,8 @@ module.exports.reviewAnswer=(req,res)=>{
                 questions.forEach(q => {
                     if(q.qId==result.qId && q.assId==result.assId && q.teachId==teacherId){
                         que=q.question
-                        console.log(q.question);
+                        correctAnswer=q.correctAnswer;
+                        console.log(q.question,"--",q.correctAnswe);
                     } 
                 });
                 
@@ -99,6 +109,7 @@ module.exports.reviewAnswer=(req,res)=>{
                    "qId":result.qId,
                    "question":que,
                    "studentAnswer":result.stuAnswer,
+                   "correctAnswer":correctAnswer,
                    "resultStatus":result.resultStatus,
                    "timeSpent":result.timeSpent,
                    "noOfAttempts":result.noOfAttempt
@@ -107,7 +118,11 @@ module.exports.reviewAnswer=(req,res)=>{
                  }
                 
          });
-         res.status(200).json({message:reviewResults}); 
+         res.status(200).json({
+             "code":200,
+             "massage":true,
+             "data":reviewResults
+         }); 
 
          
       
