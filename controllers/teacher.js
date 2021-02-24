@@ -98,7 +98,11 @@ module.exports.getOverallGrade=(req,res)=>{
                 }
 
     });console.log(sMarks)
-    res.status(200).json({message:sMarks}); 
+    res.status(200).json({
+        "code":200,
+        "massage":"true",
+        "data":sMarks
+    }); 
 }
 
 module.exports.getStatisticsOnQuestion=(req,res)=>{
