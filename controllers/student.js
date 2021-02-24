@@ -5,7 +5,6 @@ const questions=require('../staticData/question.json')
 
 
 module.exports.getStudent=(req,res)=>{
-    console.log("ok");
     if(student.length == 0){
         res.status(403).json({message :"No students available"});  
     }else{

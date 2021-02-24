@@ -1,77 +1,92 @@
 [
     {
         "userId": "S001",
-        "password": "S001"
+        "password": "S001",
+        "role":"student"
         
     },
     {
         "userId": "S002",
-        "password": "S002"
+        "password": "S002",
+        "role":"student"
         
     },
     {
         "userId": "S003",
-        "password": "S003"
+        "password": "S003",
+        "role":"student"
         
     },
     {
         "userId": "S004",
-        "password": "S004"
+        "password": "S004",
+        "role":"student"
         
     },
     {
         "userId": "S005",
-        "password": "S005"
+        "password": "S005",
+        "role":"student"
         
     },
     {
         "userId": "S006",
-        "password": "S006"
+        "password": "S006",
+        "role":"student"
         
     },
     {
         "userId": "S007",
-        "password": "S007"
+        "password": "S007",
+        "role":"student"
         
     },
     {
         "userId": "S008",
-        "password": "S008"
+        "password": "S008",
+        "role":"student"
         
     },
     {
         "userId": "S009",
-        "password": "S009"
+        "password": "S009",
+        "role":"student"
         
     },
     {
         "userId": "S010",
-        "password": "S010"
+        "password": "S010",
+        "role":"student"
         
     },
     {
         "userId": "T001",
-        "password": "T001"
+        "password": "T001",
+        "role":"teacher"
         
     },
     {
         "userId": "T002",
-        "password": "T002"
+        "password": "T002",
+        "role":"teacher"
         
     },
     {
         "userId": "T003",
-        "password": "T003"
+        "password": "T003",
+        "role":"teacher"
         
     },
     {
         "userId": "T004",
-        "password": "T004"
+        "password": "T004",
+        "role":"teacher"
         
     },
     {
         "userId": "T005",
-        "password": "T005"
+        "password": "T005",
+        "role":"teacher"
         
     }
 ]
