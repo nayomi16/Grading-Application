@@ -1,4 +1,4 @@
-# gradingapplication 
+# Grading Application 
 
 > This is a REST API backend application that can be used to manage assignments marks of students.
 
@@ -10,7 +10,7 @@ Install Node.js
 ## Assumptions
 * One Teacher has one class
 * One student has one class
-* 
+
 ### Getting started
 
 * Installs all the dependencies for the project.
