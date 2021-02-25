@@ -30,7 +30,12 @@ module.exports.getTeacher=(req,res)=>{
                     if(ass.teachID==req.params.id){
                         questions.forEach(ques => {
                             if(ques.teachId==req.params.id && ques.assId==ass.assID){
-                                question.push(ques.qId)
+                                var obj={
+                                    "qId":ques.qId,
+                                    "ques":ques.question
+                                }
+
+                                question.push(obj)
                                 
                             }
                             
@@ -70,6 +75,7 @@ module.exports.getTeacher=(req,res)=>{
 
 module.exports.getOverallGrade=(req,res)=>{
     let sId;
+    let noOfAttempts;
     var sMarks=[];
     let wrongCount=0;
     let rightCount=0;
@@ -85,14 +91,15 @@ module.exports.getOverallGrade=(req,res)=>{
                 if(result.resultStatus=="wrong") wrongCount=wrongCount+1;
                 else if(result.resultStatus=="right") rightCount=rightCount+1;
                 else if(result.resultStatus=="partial") partialCount=partialCount+1;
-            
+                noOfAttempts=result.noOfAttempt;
         }
             });
             marks=((rightCount+(partialCount*0.5))/(wrongCount+rightCount+partialCount))*100
             console.log(marks)
             sMark={
                 "sId":sId,
-                "marks":marks
+                "marks":marks.toFixed(2),
+                "noOfAttempts":noOfAttempts
             }
             sMarks.push(sMark);
                 }

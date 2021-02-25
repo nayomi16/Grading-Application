@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const users=require('../staticData/user.json')
 
 
+
 module.exports.loginUser=(req,res)=>{
     console.log(req)
     const userId=req.body.userId;
