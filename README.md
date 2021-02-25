@@ -2,8 +2,6 @@
 
 > This is a REST API backend application that can be used to manage assignments marks of students.
 
-### Requirements
-
 #### Pre requirements
 
 Install Node.js 
@@ -45,7 +43,7 @@ Error Response:
 Code: 500
 message : "false"
 data: { error : }
-
+```
 #### Further work
 * Implement unit testing ( jest)
 
