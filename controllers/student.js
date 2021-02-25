@@ -5,6 +5,7 @@ const questions=require('../staticData/question.json')
 
 
 module.exports.getStudent=(req,res)=>{
+    console.log("heade=",req.headers.authorization)
     if(student.length == 0){
         res.status(403).json({message :"No students available"});  
     }else{
@@ -43,6 +44,7 @@ module.exports.getStudent=(req,res)=>{
 }
 
 module.exports.getDetailResults=(req,res)=>{
+    console.log("heade=",req.headers.authorization)
     const qResults=[];
     let L;
     if(studentResults.length == 0){
