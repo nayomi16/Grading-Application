@@ -12,28 +12,28 @@
         "SId": "S001",
         "assId": "Assignment_1",
         "qId": "Q2" ,
-        "resultStatus":"right" ,
+        "resultStatus":"wrong" ,
         "noOfAttempt":"1",
         "timeSpent":1,
-        "stuAnswer":5.81
+        "stuAnswer":4.8
     },
     {
         "SId": "S001",
         "assId": "Assignment_1",
         "qId": "Q3" ,
-        "resultStatus":"right" ,
+        "resultStatus":"wrong" ,
         "noOfAttempt":"2",
         "timeSpent":2,
-        "stuAnswer":2.5
+        "stuAnswer":1.5
     },
     {
         "SId": "S001",
         "assId": "Assignment_2",
         "qId": "Q1" ,
-        "resultStatus":"right" ,
+        "resultStatus":"partial" ,
         "noOfAttempt":"3",
         "timeSpent":2,
-        "stuAnswer":-11.2
+        "stuAnswer":-11
     },
     {
         "SId": "S001",
