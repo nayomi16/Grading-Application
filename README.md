@@ -1,20 +1,52 @@
-# gradingapplication [![NPM version](https://badge.fury.io/js/gradingapplication.svg)](https://npmjs.org/package/gradingapplication) [![Build Status](https://travis-ci.org/nayomi16/gradingapplication.svg?branch=master)](https://travis-ci.org/nayomi16/gradingapplication)
+# gradingapplication 
 
-> Grading Application
+> This is a REST API backend application that can be used to manage assignments marks of students.
 
-## Installation
+### Requirements
 
+#### Pre requirements
+
+Install Node.js 
+* Nodejs environment
+
+## Assumptions
+* One Teacher has one class
+* One student has one class
+* 
+### Getting started
+
+* Installs all the dependencies for the project.
 ```sh
-$ npm install --save gradingapplication
+$ npm install 
 ```
+*add static data into staticData files
 
-## Usage
+*Start the API server. Default port is 5000 node index.js
 
-```js
-var gradingapplication = require('gradingapplication');
-gradingapplication();
+#### Technology stack & other libraries
+
+* Node.js , Expressjs,
+
+
+
+#### External Tools & Services
+
+* Postman - API Development Environment (Testing Documentation)
+ 
+
+Success Response:
+```json
+Code: 200
+message : "true"
+data: {Note json objects of all archive notes}
 ```
+Error Response:
+```json
+Code: 500
+message : "false"
+data: { error : }
 
-## License
+#### Further work
+* Implement unit testing ( jest)
 
-ISC © [Nayomi](y)
+
