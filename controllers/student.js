@@ -9,15 +9,17 @@ module.exports.getStudent=(req,res)=>{
     if(student.length == 0){
         res.status(403).json({message :"No students available"});  
     }else{
-            let L;
-            console.log(req.params.SId);
+            let L=0;
             const attemptAssignments = new Set()
             let attemptAssignmentsArray = [];
             student.forEach(s => {
                 if(s.SId==req.params.SId) {
 
                     studentResults.forEach(stuResult => {
-                        if(stuResult.SId==req.params.SId) attemptAssignments.add(stuResult.assId);
+                        if(stuResult.SId==req.params.SId) {
+                            attemptAssignments.add(stuResult.assId);
+                            L=L+1;
+                        }
                     });
 
                     attemptAssignments.forEach(v => attemptAssignmentsArray.push(v));
@@ -27,7 +29,7 @@ module.exports.getStudent=(req,res)=>{
                         
                     };
 
-                    L=req.params.SId;
+                    
                     res.status(200).json({
                         "code":200,
                         "massage":"true",
@@ -37,7 +39,7 @@ module.exports.getStudent=(req,res)=>{
                 
             });
             // console.log(attemptAssignmentsArray);
-            if(L==null){
+            if(L==0){
                 res.status(403).json({message :"Student id is invalid"}); 
             }
             }

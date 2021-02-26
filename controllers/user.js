@@ -15,7 +15,7 @@ module.exports.loginUser=(req,res)=>{
             i=i+1;
             return res.status(200).json({
                 "code":200,
-                "massage":"true",
+                "message":"true",
                 "data":{
                     "token":token,
                     "role":user.role
@@ -27,7 +27,7 @@ module.exports.loginUser=(req,res)=>{
     if(i==0){
         res.status(500).json({
             "code":500,
-            "massage":"'The userId doesnt exists or password is incorect'",
+            "message":"'The userId doesnt exists or password is incorect'",
             "data":null
         });
     }
